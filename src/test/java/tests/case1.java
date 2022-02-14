@@ -31,9 +31,21 @@ private static WebDriver driver;
     public void test1() {
         driver.get("http://google.com");
         driver.findElement(By.cssSelector("input")).sendKeys("Калькулятор", Keys.ENTER);
+        driver.findElement(By.cssSelector("[jsname=j93WEe]")).click();
+        driver.findElement(By.cssSelector("[jsname=N10B9]")).click();
+        driver.findElement(By.cssSelector("[jsname=XSr6wc]")).click();
         driver.findElement(By.cssSelector("[jsname=lVjWed]")).click();
-        assertEquals(4, 3, driver.findElements(By.cssSelector("[jsname=ubtiRe]")).size());
+        driver.findElement(By.cssSelector("[jsname=qCp9A]")).click();
+        driver.findElement(By.cssSelector("[jsname=YovRWb]")).click();
+        driver.findElement(By.cssSelector("[jsname=KN1kY]")).click();
+        driver.findElement(By.cssSelector("[jsname=pPHzQc]")).click();
+        driver.findElement(By.cssSelector("[jsname=xAP7E]")).click();
+        driver.findElement(By.cssSelector("[jsname=bkEvMb]")).click();
+        driver.findElement(By.cssSelector("[jsname=WxTTNd]")).click();
+        driver.findElement(By.cssSelector("[jsname=Ax5wH]")).click();
+
+
         assertEquals(1,driver.findElements(By.cssSelector("[jsname=a1lrmb]")).size());
-        assertEquals(2,details);
+
     }
     }
