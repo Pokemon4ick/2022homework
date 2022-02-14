@@ -43,9 +43,8 @@ private static WebDriver driver;
         driver.findElement(By.cssSelector("[jsname=bkEvMb]")).click();
         driver.findElement(By.cssSelector("[jsname=WxTTNd]")).click();
         driver.findElement(By.cssSelector("[jsname=Ax5wH]")).click();
-
-
-        assertEquals(1,driver.findElements(By.cssSelector("[jsname=a1lrmb]")).size());
-
+        driver.findElement(By.cssSelector("[jsname=Pt8tGc]")).click();
+        assertEquals("(1 + 2) × 3 - 40 ÷ 5 =", driver.findElements(By.cssSelector("[jsname=ubtiRe]")).size());
+        assertEquals("1", driver.findElements(By.cssSelector("[jsname=VssY5c]")).size());
     }
     }
